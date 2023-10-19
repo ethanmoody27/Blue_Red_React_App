@@ -1,20 +1,36 @@
-import { useState } from 'react'
-import './App.css'
-import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
+import './index.css';
+import { Routes, Route, Link } from 'react-router-dom';
+import Blue from './components/Blue';
+import Red from './components/Red';
+import Home from './components/Home';
+import About from './components/About';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <div id="container">
+        <h1 id="heading">My App</h1>
+        <div id="navbar">
+          <Link to="/home">Home</Link>
+          <Link to="/blue">Blue</Link>
+          <Link to="/red">Red</Link>
+          <Link to="/about">About</Link>
+        </div>
+        <div id="main-section">
+          {}
+        </div>
         <Routes>
-          <Route path="/blue" element={<h1>Blue</h1>} />
-          <Route path="/red" element={<h1>Red</h1>} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/blue" element={<Blue />} />
+          <Route path="/red" element={<Red />} />
+          <Route path="/about" element={<About />} />
         </Routes>
-    </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+

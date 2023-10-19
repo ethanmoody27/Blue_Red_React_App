@@ -17,6 +17,11 @@ body > div {
 
 #container > div {
   display: flex;
+  align-items: center;
+}
+
+#heading {
+  text-align: center;
 }
 
 #navbar {
@@ -32,15 +37,45 @@ body > div {
   width: 100%;
   display: flex;
   align-items: center;
+  text-align: center;
+}
+
+.home {
+  background-color: aquamarine;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .red {
   background-color: #b05f6d;
   color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .blue {
   background-color: #275db3;
   color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  background-color: #e0e0e0;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
